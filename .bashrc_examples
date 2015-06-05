@@ -1,0 +1,13 @@
+#list the size of all found files (with spaces in names)
+
+sudo find / -name "*Genymotion*" -print0  | xargs -0 du -h -d 0
+
+===============================
+result:
+
+  54M   /Applications/Genymotion Shell.app
+ 130M   /Applications/Genymotion.app
+ 2.4G   /Users/kowaraj/.Genymobile/Genymotion
+ 4.0K   /Users/kowaraj/Library/Preferences/com.genymobile.Genymotion.plist
+  54M   /Volumes/genymotion-2.4.0/Genymotion Shell.app
+ 130M   /Volumes/genymotion-2.4.0/Genymotion.app
