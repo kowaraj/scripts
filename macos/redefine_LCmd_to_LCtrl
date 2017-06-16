@@ -1,15 +1,25 @@
-[kapashnin@ams02mbp01qc15: ~/Library/KeyBindings ] hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x7000000e3,"HIDKeyboardModifierMappingDst":0x7000000e0}]}'
-UserKeyMapping:(
-        {
-        HIDKeyboardModifierMappingDst = 30064771296;
-        HIDKeyboardModifierMappingSrc = 30064771299;
-    }
-)
+// Left control -> Left Command
+// Left command -> Left Control
 
-[kapashnin@ams02mbp01qc15: ~/Library/KeyBindings ] hidutil property --get "UserKeyMapping"
-(
-        {
-        HIDKeyboardModifierMappingDst = 30064771296;
-        HIDKeyboardModifierMappingSrc = 30064771299;
-    }
-)
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x7000000e3,"HIDKeyboardModifierMappingDst":0x7000000e0}, {"HIDKeyboardModifierMappingSrc":0x7000000e0, "HIDKeyboardModifierMappingDst":0x7000000e3}]}'
+
+
+
+
+
+
+// [kapashnin@ams02mbp01qc15: ~/Library/KeyBindings ] hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x7000000e3,"HIDKeyboardModifierMappingDst":0x7000000e0}]}'
+// UserKeyMapping:(
+//         {
+//         HIDKeyboardModifierMappingDst = 30064771296;
+//         HIDKeyboardModifierMappingSrc = 30064771299;
+//     }
+// )
+
+// [kapashnin@ams02mbp01qc15: ~/Library/KeyBindings ] hidutil property --get "UserKeyMapping"
+// (
+//         {
+//         HIDKeyboardModifierMappingDst = 30064771296;
+//         HIDKeyboardModifierMappingSrc = 30064771299;
+//     }
+// )
