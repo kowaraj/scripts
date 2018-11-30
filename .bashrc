@@ -1,3 +1,12 @@
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+
+alias aws2='ssh -i ~/.ssh/key_awsOnEdX.pem ec2-user@ec2-34-244-223-173.eu-west-1.compute.amazonaws.com'
+alias aws3='ssh -i ~/.ssh/key_awsOnEdX.pem ec2-user@ec2-34-244-85-79.eu-west-1.compute.amazonaws.com'
+
+
+alias pc00='ssh -t -L 5900:localhost:5900 apashnin@pcamsadmin00'
+alias pc00con='open vnc://localhost:5900'
 
 
 set bell-style none
@@ -38,7 +47,7 @@ export PATH=$PATH:/usr/local/bin:~/usr/bin
 #alias ll='ls -lahG'
 
 export JAVA_HOME=/Library/Java/Home
-export PATH=$PATH:/usr/local/CrossPack-AVR/bin/
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:
 
 
 
@@ -68,3 +77,4 @@ alias ll="ls -la"
 
 
 
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x7000000e3,"HIDKeyboardModifierMappingDst":0x7000000e0}, {"HIDKeyboardModifierMappingSrc":0x7000000e0, "HIDKeyboardModifierMappingDst":0x7000000e3}]}'
